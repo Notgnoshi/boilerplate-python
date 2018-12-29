@@ -1,19 +1,18 @@
-class Thingy(object):
-    """
-        An example thingy.
+class Thingy:
+    """An example thingy.
 
-        :Example:
+    :Example:
 
-        >>> t = Thingy()
-        >>> print(t.stuff)
-        None
-        >>> t.stuff == None
-        True
-
+    >>> t = Thingy()
+    >>> print(t.stuff)
+    None
+    >>> t.stuff == None
+    True
     """
 
     def __init__(self):
-        """
+        """Initialize a Thingy.
+
         :param self: The instance to initialize
         """
         self.stuff = None

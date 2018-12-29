@@ -19,7 +19,7 @@ help:
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 viewhtml: html
-	xdg-open docs/build/html/index.html
+	firefox docs/build/html/index.html
 
 viewlatex: latexpdf
 	xdg-open docs/build/latex/$(SPHINXPROJ).pdf

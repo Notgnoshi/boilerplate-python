@@ -1,5 +1,7 @@
 # Boilerplate Python Project
 
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+
 ## Unit tests
 
 Run unit tests with the provided `runtests.py` script. Alternatively, run them with `nosetests --with-doctests`. There are unit tests in the `boilerplate.tests` submodule, and there are doctests throughout the `boilerplate` module.
@@ -13,15 +15,16 @@ I've never used Sphinx in an actual project before (it's been on the TODO list t
 
 Simply running `make` will display the options available.
 
-## `setup.py`
-
-This is something that I'm unsure about, but I have a `setup.py` file and I *think* it is bug-free (great, now I've guaranteed it doesn't work right ;) ).
-
 ## Dependencies
 
-TODO: There's a way to install all the dependencies using the `setup.py` file. However, until I figure that out, here are the dependencies:
-
 * `nose`
-* `Sphinx`
+* `Sphinx` and `sphinxcontrib-napoleon`
 * `doctest`
 * Python 3.6+
+
+## TODO
+
+* Get `setup.py` figured out
+* Make a `requirements.txt`
+* Document how to configure Sphinx
+* Add runtests and view code coverage to `Makefile`.
