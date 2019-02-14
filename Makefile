@@ -23,3 +23,18 @@ viewhtml: html
 
 viewlatex: latexpdf
 	xdg-open docs/build/latex/$(SPHINXPROJ).pdf
+
+runtests:
+	@nosetests                                                                 \
+		--processes=-1                                                         \
+		--with-doctest                                                         \
+		--with-coverage                                                        \
+		--cover-html                                                           \
+		--cover-erase                                                          \
+		--cover-tests                                                          \
+		--cover-inclusive                                                      \
+		--cover-package=boilerplate                                            \
+		--cover-html-dir=htmlcov
+
+viewcoverage: runtests
+	firefox htmlcov/index.html
