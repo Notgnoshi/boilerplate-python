@@ -24,7 +24,7 @@ viewhtml: html
 viewlatex: latexpdf
 	xdg-open docs/build/latex/$(SPHINXPROJ).pdf
 
-runtests:
+check:
 	@nosetests                                                                 \
 		--processes=-1                                                         \
 		--with-doctest                                                         \
@@ -36,5 +36,5 @@ runtests:
 		--cover-package=boilerplate                                            \
 		--cover-html-dir=htmlcov
 
-viewcoverage: runtests
+viewcoverage: check
 	firefox htmlcov/index.html
