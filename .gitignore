@@ -8,6 +8,9 @@ docs/*
 !docs/intro.rst
 !docs/module.rst
 
+# Ignore the poetry lock file, because this is a template, and we want the latest versions of everything.
+poetry.lock
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
